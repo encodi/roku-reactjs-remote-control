@@ -65,12 +65,20 @@ class RemoteControl extends Component {
 
         <div role="separator" className="divider"></div>
 
-        <button name="Search" onClick={this.props.handleClick}>Search</button>
-        <button name="Enter" onClick={this.props.handleClick}>Enter</button>
-        <button name="VolumeDown" onClick={this.props.handleClick}>Volume Down</button>
-        <button name="VolumeUp" onClick={this.props.handleClick}>Volume Up</button>
-        <button name="VolumeMute" onClick={this.props.handleClick}>Mute</button>
-        <button name="PowerOff" onClick={this.props.handleClick}>Power Off</button>
+        <div className="row">
+          <button name="Search" onClick={this.props.handleClick}>Search</button>
+          <button name="Enter" onClick={this.props.handleClick}>Enter</button>
+          <button name="VolumeDown" onClick={this.props.handleClick}>Volume Down</button>
+          <button name="VolumeUp" onClick={this.props.handleClick}>Volume Up</button>
+          <button name="VolumeMute" onClick={this.props.handleClick}>Mute</button>
+          <button name="PowerOff" onClick={this.props.handleClick}>Power Off</button>
+        </div>
+
+        <div className="row">
+          <div className="col-sm-1">
+            <label>Input text: </label><button name="">Send text to roku input box</button>
+          </div>
+        </div>
       </div>
     );
   }
